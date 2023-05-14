@@ -29,7 +29,7 @@ export const register = (data) => async (dispatch) => {
       type: REGISTRATION_FAIL,
       payload: err.response.data.message,
     });
-    dispatch(alertActions.error(err.response.data.toString()));
+    dispatch(alertActions.error(err.response.data.message.toString()));
     setTimeout(() => {
       dispatch(alertActions.error_clear());
       dispatch(alertActions.clear());

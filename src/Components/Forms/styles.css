@@ -1,0 +1,82 @@
+.white_box {
+  position: relative;
+  background-color: white;
+  width: 70%;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 1px rgb(2, 96, 63);
+  padding: 15px 20px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 50%;
+  padding: 0 25px;
+}
+.profile_picture_preview {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+}
+.submit_btn {
+  width: 100%;
+  background-color: var(--primary-color);
+  height: 45px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px 1px rgb(1, 86, 79);
+}
+.label {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .col {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .profile_picture {
+    height: 100px;
+    width: 100px;
+  }
+}
+.glass_box {
+  width: 40%;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 25px;
+}
+.col-12 {
+  display: flex;
+  flex-direction: column;
+  width: 100% !important;
+  margin-bottom: 25px;
+}
+@media screen and (max-width: 500px) {
+  .glass_box {
+    width: 70%;
+  }
+}
+.password_field_row {
+  display: flex;
+  align-items: center;
+}

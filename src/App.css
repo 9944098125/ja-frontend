@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  --primary-color: #b318fa;
+  --secondary-color: #68ebe0;
+  --dark-color: #262939;
+  --light-color: #ffffff;
+  --light-grey-color: #acacac;
+  --font-weight-normal: 700;
+  --font-weight-small: 500;
+  --black: #17171a;
+  --white: #f8f8f8;
+}
+.form-control:focus,
+.form-control:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.form-control:focus,
+.form-control:active {
+  border: 2px solid var(--primary-color) !important;
+}
+.login-input-field {
+  line-height: 2.5 !important;
+  background-color: var(--background) !important;
+  width: 100% !important;
+  box-shadow: 1px 0 1px 0 grey;
+}
+.primary_input_Field {
+  line-height: 1.75 !important;
+  background-color: var(--background) !important;
+}
+.invalid-feedback {
+  color: red;
+  font-size: 15px;
+}
+.heading_container,
+.login_heading_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.fixed_navbar {
+  height: 12vh;
+  border-bottom: 1px solid var(--primary-color);
+}
+.scrollable_content {
+  height: 88vh;
+  overflow-y: scroll;
+}
+.scrollable_content::-webkit-scrollbar {
+  display: none;
+}
