@@ -4,7 +4,7 @@ const useClickOutside = (ref, func) => {
   React.useEffect(() => {
     const listener = (e) => {
       // console.log(ref.current);
-      if (ref.current === null || ref.current.contains(e.target)) {
+      if (ref.current === null) {
         return;
       } else {
         func();
