@@ -10,6 +10,7 @@ import { useMediaQuery } from "react-responsive";
 import logo from "../../Assets/logo.png";
 import { toggleTheme } from "../../Redux/Actions/toggleTheme";
 import { logout } from "../../Redux/Actions/login";
+import useClickOutside from "../../Helpers/clickOutside";
 import "./styles.css";
 
 export default function Navbar() {
@@ -25,6 +26,10 @@ export default function Navbar() {
 
   // to implement click outside function
   const userMenu = React.useRef();
+
+  useClickOutside(userMenu, () => {
+    setShowUserMenu(false);
+  });
 
   const smallDevicesView = useMediaQuery({
     query: "(max-width:500px)",
